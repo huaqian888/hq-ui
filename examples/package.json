@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@hq-ui/utils": "workspace:^",
-    "hq-ui": "workspace:^"
+    "@huaqian-ui/utils": "workspace:^",
+    "huaqian-ui": "workspace:^"
   }
 }

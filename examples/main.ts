@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import HqUI from 'hq-ui'
+import HqUI from 'huaqian-ui'
 import App from './App.vue'
 
 const app = createApp(App)
