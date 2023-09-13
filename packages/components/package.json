@@ -1,5 +1,5 @@
 {
-  "name": "@hq-org/hq-ui",
+  "name": "hq-ui",
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
