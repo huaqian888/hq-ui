@@ -4,6 +4,6 @@
 
 <script setup lang="ts">
 defineOptions({
-  name: "HqButton",
+  name: 'HqButton',
 });
 </script>

@@ -1,0 +1,4 @@
+{
+  "packages/**/*.{ts,tsx,vue,js}": "npm run lint:eslint",
+  "packages/**/*.{vue,css,scss,less}": "npm run lint:style"
+}

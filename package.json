@@ -1,18 +1,33 @@
 {
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint:style": "stylelint \"packages/**/*.{vue,css,scss}\" --config .stylelintrc --fix",
+    "lint:eslint": "eslint \"packages/**/*.{vue,ts,js,tsx}\" --max-warnings=0 --fix"
   },
   "keywords": [],
   "author": "huaqian",
   "license": "ISC",
   "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.7.3",
     "@vitejs/plugin-vue": "^4.3.4",
     "@vue-macros/volar": "^0.14.3",
+    "eslint": "8.0.1",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-standard-with-typescript": "^39.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^16.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3",
     "sass": "^1.66.1",
+    "simple-git-hooks": "^2.9.0",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^34.0.0",
     "typescript": "^5.2.2",
@@ -20,5 +35,12 @@
     "vite": "^4.4.9",
     "vite-plugin-dts": "^3.5.3",
     "vue": "^3.2.36"
+  },
+  "dependencies": {
+    "vue-i18n": "^9.4.1"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged",
+    "commit-msg": "pnpm commitlint --edit"
   }
 }
