@@ -1,1 +1,1 @@
-export { default as HqIcon } from './icon.vue'
+export { default as HqIcon } from './icon.vue';

@@ -1,1 +1,5 @@
-export { default as HqButton } from './button.vue'
+import Button from './button.vue';
+
+export default Button;
+
+export * from './button';
